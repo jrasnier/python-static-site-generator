@@ -9,7 +9,7 @@ class Site:
         directory = self.dest() / relative_to(self.source)
         self.directory.mkdir(parent=True, exist_ok=True)
 
-    def build()
+    def build():
         self.dest.mkdir(parents=True, exist_ok=True)
         for path in self.source.rglob("*")
             if self.is_dir()
