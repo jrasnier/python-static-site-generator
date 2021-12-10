@@ -1,8 +1,9 @@
-import path from pathlib
+from pathlib import Path
 
-class Site(self, source, dest):
-    source = path(source)
-    dest = path(dest)
+class Site:
+    def __site__(self, source, dest):
+        self.source = path(source)
+        self.dest = path(dest)
 
    def create_dir(self, path):
        directory = self.dest() + "/" + relative_to()
