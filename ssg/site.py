@@ -1,7 +1,7 @@
 from pathlib import Path
 
 class Site:
-    def __site__(self, source, dest):
+    def __init__(self, source, dest):
         self.source = path(source)
         self.dest = path(dest)
 
