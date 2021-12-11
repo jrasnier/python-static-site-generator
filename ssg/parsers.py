@@ -1,5 +1,5 @@
-import List from typing
-import Path from pathlib
+from typing import List
+from pathlib import Path
 
 class Parser():
     #extensions = List[str]
