@@ -18,6 +18,6 @@ class Site:
 
     def load_parser(extension):
         for parser in self.parsers:
-            if extension.valid_extension()
+            if extension.valid_extension():
                 return parser
 
