@@ -17,7 +17,7 @@ class Site:
                 self.create_dir(path)
 
     def load_parser(extension):
-        for parser in self.parsers
+        for parser in self.parsers:
             if extension.valid_extension()
                 return parser
 
