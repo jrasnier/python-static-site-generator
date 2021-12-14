@@ -8,13 +8,12 @@ class Content(Mapping):
     __regex  = re.compile(__delimiter, re.MULTILINE)
 
     @classmethod
-    def load(self, cls, string):
-        cls.__regex = split(string, 2)
-        _ = cls.__regex
-        fm = cls.__regex
-        content = cls.__regex
+    def load(cls, string):
+        _, fm, content = cls.__regex.split(string, 2)
 
-        self.load(fm)
+
+
+        metadata.load(fm, Loader=FullLoader)
         return cls(metadata, content)
 
 
