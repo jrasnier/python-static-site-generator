@@ -9,10 +9,10 @@ class Content(Mapping):
 
     @classmethod
     def load(self, cls, string):
-        __regex = split(string, 2)
-        _ = __regex
-        fm = __regex
-        content = __regex
+        cls.__regex = split(string, 2)
+        _ = cls.__regex
+        fm = cls.__regex
+        content = cls.__regex
 
         self.load(fm)
         return cls(metadata, content)
