@@ -13,7 +13,7 @@ class Content(Mapping):
 
 
 
-        metadata.load(fm, Loader=FullLoader)
+        metadata =load (fm, Loader=FullLoader)
         return cls(metadata, content)
 
 
