@@ -30,7 +30,7 @@ class Parser():
 class ResourceParser(Parser):
     extensions = [".jpg", ".png", ".gif", ".css", ".html"]
 
-    def parse(self, path: Path, source, dest):
+    def parse(self, path, source, dest):
         raise NotImplementedError
 
 class MarkdownParser(Parser):
@@ -38,4 +38,4 @@ class MarkdownParser(Parser):
     
     def parse(self, path, source, dest):
         content = Content.load(self.read(path))
-
+        html = markdown(content.body())
