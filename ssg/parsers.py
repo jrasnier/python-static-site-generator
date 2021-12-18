@@ -32,3 +32,8 @@ class ResourceParser(Parser):
 
     def parse(self, path: Path, source, dest):
         raise NotImplementedError
+
+class MarkdownParser(Parser):
+    extensions = {".md", ".markdown"}
+
+
