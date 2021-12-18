@@ -34,6 +34,6 @@ class ResourceParser(Parser):
         raise NotImplementedError
 
 class MarkdownParser(Parser):
-    extensions = {".md", ".markdown"}
+    extensions = [".md", ".markdown"]
 
 
